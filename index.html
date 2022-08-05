@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center of Mass Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="centerofMassRadio" name="variables" checked>
+  <label for="centerofMassRadio">Center of Mass</label>
+
+  <input type="radio" id="massofObject1Radio" name="variables" disabled>
+  <label for="massofObject1Radio">Mass of Object 1</label>
+
+  <input type="radio" id="massofObject2Radio" name="variables" disabled>
+  <label for="massofObject2Radio">Mass of Object 2</label>
+
+  <input type="radio" id="distanceofObject1fromFixedPointRadio" name="variables">
+  <label for="distanceofObject1fromFixedPointRadio">Distance of Object 1 from Fixed Point</label>
+
+  <input type="radio" id="distanceofObject2fromFixedPointRadio" name="variables">
+  <label for="distanceofObject2fromFixedPointRadio">Distance of Object 2 from Fixed Point</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(m1) Mass of Object 1 (kg)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(m2) Mass of Object 2 (kg)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(x1) Distance of Object 1 from Fixed Point (m)</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">(x2) Distance of Object 2 from Fixed Point (m)</label>
+  <input type="number" id="v4"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
